@@ -27,7 +27,7 @@ def read_all_products_route(db: Session = Depends(get_db)):
 
 @router.get("/products/{product_id}", response_model=ProductResponse)
 def read_product_route(product_id: int, db: Session = Depends(get_db)):
-    db_product = get_product(db=db, product_id=product_id)
+    db_product = get_product(db, product_id=product_id)
     if db_product is None:
         raise HTTPException(status_code=404, detail="Produto não existe, não foi possível retornar")
     return db_product
@@ -45,7 +45,7 @@ def detele_product_route(product_id: int, db: Session = Depends(get_db)):
 def update_product_route(
     product_id: int, product: ProductUpdate, db: Session = Depends(get_db)
 ):
-    db_product = update_product(db=db, product_id=product_id, product=product)
+    db_product = update_product(db, product_id=product_id, product=product)
     if db_product is None:
         raise HTTPException(status_code=404, detail="Produto não existe, não foi possível atualizar")
     return db_product

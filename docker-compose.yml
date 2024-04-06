@@ -26,6 +26,16 @@ services:
     networks:
       - mynetwork
 
+  frontend:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "8501:8501"
+    networks:
+      - mynetwork
 
 networks:
   mynetwork:
