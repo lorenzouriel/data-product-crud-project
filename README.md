@@ -26,14 +26,6 @@ poetry shell
 poetry install
 ```
 
-### Deploy
-1. Realize a conexão no [Dashboard Render](https://dashboard.render.com/web/srv-cnof66a1hbls7385dumg)
-
-    1.1. New -> Web Service -> Build and Deploy from a Git Repository
-   
-    1.2. Connect to the Git repository 
-
-
 ### Arquitetura
 ![flow](/docs/flow.png)
 
@@ -74,14 +66,6 @@ poetry shell
 ```bash
 poetry installation
 ```
-
-### Deploy
-1. Make a connection to [Dashboard Render](https://dashboard.render.com/web/srv-cnof66a1hbls7385dumg)
-
-    1.1. New -> Web Service -> Build and deploy from a Git repository
-   
-    1.2. Connect to the Git repository
-
 
 ### Architecture
 ![flow](/docs/flow.png)
