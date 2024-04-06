@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+SQLAlchemy
+email-validator # poetry add 'pydantic[email]'
+psycopg2-binary # poetry add psycopg2
