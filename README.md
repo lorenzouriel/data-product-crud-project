@@ -37,7 +37,7 @@ poetry install
 ---
 ---
 ---
-ÇÇ
+
 ### Installation and Configuration
 
 #### 1. Clone the repository:
